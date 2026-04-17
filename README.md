@@ -1,6 +1,6 @@
-# FairML BERT Bias Audit (Phases 1-4)
+# FairML BERT Bias Testing
 
-This project audits sociolinguistic bias in BERT embeddings using Indian literature from Project Gutenberg.
+This project measures sociolinguistic bias in BERT embeddings using Indian literature from Project Gutenberg.
 
 ## Target sets (what they mean)
 
@@ -30,9 +30,7 @@ Bias is computed for attribute words in four sets:
 2. For each word, those contextual vectors are mean-pooled into one **centroid vector**.
 3. For each attribute word `a`, compute:
 
-\[
-\text{Bias}(a)=\text{mean}(\cos(a,\text{male target set}))-\text{mean}(\cos(a,\text{female target set}))
-\]
+`Bias(a) = mean(cos(a, male target set)) - mean(cos(a, female target set))`
 
 Interpretation:
 
