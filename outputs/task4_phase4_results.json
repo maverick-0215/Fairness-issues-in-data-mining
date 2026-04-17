@@ -1,0 +1,553 @@
+{
+  "phase": 4,
+  "description": "Fairness quantification with Bias(a) = mean(cos(a, male)) - mean(cos(a, female))",
+  "model_name": "bert-base-uncased",
+  "rows": [
+    {
+      "attribute_set": "science",
+      "attribute_word": "science",
+      "mean_cosine_to_male": 0.4437379986047745,
+      "mean_cosine_to_female": 0.41267530755563214,
+      "bias_score": 0.031062691049142332,
+      "absolute_bias": 0.031062691049142332,
+      "neutrality_distance": 0.031062691049142332
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "mathematics",
+      "mean_cosine_to_male": 0.40201686571041745,
+      "mean_cosine_to_female": 0.3838878571987152,
+      "bias_score": 0.018129008511702238,
+      "absolute_bias": 0.018129008511702238,
+      "neutrality_distance": 0.018129008511702238
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "math",
+      "mean_cosine_to_male": 0.3763788938522339,
+      "mean_cosine_to_female": 0.3494892716407776,
+      "bias_score": 0.0268896222114563,
+      "absolute_bias": 0.0268896222114563,
+      "neutrality_distance": 0.0268896222114563
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "physics",
+      "mean_cosine_to_male": 0.38547977060079575,
+      "mean_cosine_to_female": 0.3433897468176755,
+      "bias_score": 0.04209002378312027,
+      "absolute_bias": 0.04209002378312027,
+      "neutrality_distance": 0.04209002378312027
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "chemistry",
+      "mean_cosine_to_male": 0.3172220860918363,
+      "mean_cosine_to_female": 0.3256951895627109,
+      "bias_score": -0.008473103470874599,
+      "absolute_bias": 0.008473103470874599,
+      "neutrality_distance": 0.008473103470874599
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "experiment",
+      "mean_cosine_to_male": 0.4385916019479434,
+      "mean_cosine_to_female": 0.4219195978208022,
+      "bias_score": 0.016672004127141204,
+      "absolute_bias": 0.016672004127141204,
+      "neutrality_distance": 0.016672004127141204
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "theory",
+      "mean_cosine_to_male": 0.4641109084089597,
+      "mean_cosine_to_female": 0.4310889785939997,
+      "bias_score": 0.033021929814959994,
+      "absolute_bias": 0.033021929814959994,
+      "neutrality_distance": 0.033021929814959994
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "logic",
+      "mean_cosine_to_male": 0.43765202661355335,
+      "mean_cosine_to_female": 0.42079177498817444,
+      "bias_score": 0.016860251625378908,
+      "absolute_bias": 0.016860251625378908,
+      "neutrality_distance": 0.016860251625378908
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "analysis",
+      "mean_cosine_to_male": 0.4751029685139656,
+      "mean_cosine_to_female": 0.44931120493195276,
+      "bias_score": 0.02579176358201285,
+      "absolute_bias": 0.02579176358201285,
+      "neutrality_distance": 0.02579176358201285
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "reason",
+      "mean_cosine_to_male": 0.371911180516084,
+      "mean_cosine_to_female": 0.36542256582867017,
+      "bias_score": 0.006488614687413852,
+      "absolute_bias": 0.006488614687413852,
+      "neutrality_distance": 0.006488614687413852
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "scholar",
+      "mean_cosine_to_male": 0.5096643591920534,
+      "mean_cosine_to_female": 0.4635941034013575,
+      "bias_score": 0.04607025579069596,
+      "absolute_bias": 0.04607025579069596,
+      "neutrality_distance": 0.04607025579069596
+    },
+    {
+      "attribute_set": "science",
+      "attribute_word": "laboratory",
+      "mean_cosine_to_male": 0.4281873404979706,
+      "mean_cosine_to_female": 0.4102314818989147,
+      "bias_score": 0.017955858599055907,
+      "absolute_bias": 0.017955858599055907,
+      "neutrality_distance": 0.017955858599055907
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "art",
+      "mean_cosine_to_male": 0.4437241852283478,
+      "mean_cosine_to_female": 0.4129113554954529,
+      "bias_score": 0.030812829732894897,
+      "absolute_bias": 0.030812829732894897,
+      "neutrality_distance": 0.030812829732894897
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "music",
+      "mean_cosine_to_male": 0.46492132792870206,
+      "mean_cosine_to_female": 0.45960619232871314,
+      "bias_score": 0.005315135599988918,
+      "absolute_bias": 0.005315135599988918,
+      "neutrality_distance": 0.005315135599988918
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "poetry",
+      "mean_cosine_to_male": 0.46290221561988193,
+      "mean_cosine_to_female": 0.45096210728992114,
+      "bias_score": 0.011940108329960786,
+      "absolute_bias": 0.011940108329960786,
+      "neutrality_distance": 0.011940108329960786
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "dance",
+      "mean_cosine_to_male": 0.4612744053204854,
+      "mean_cosine_to_female": 0.4901407767425884,
+      "bias_score": -0.028866371422102965,
+      "absolute_bias": 0.028866371422102965,
+      "neutrality_distance": 0.028866371422102965
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "drama",
+      "mean_cosine_to_male": 0.497709554930528,
+      "mean_cosine_to_female": 0.47292006286707794,
+      "bias_score": 0.024789492063450047,
+      "absolute_bias": 0.024789492063450047,
+      "neutrality_distance": 0.024789492063450047
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "painting",
+      "mean_cosine_to_male": 0.45772720873355865,
+      "mean_cosine_to_female": 0.4262445569038391,
+      "bias_score": 0.03148265182971954,
+      "absolute_bias": 0.03148265182971954,
+      "neutrality_distance": 0.03148265182971954
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "literature",
+      "mean_cosine_to_male": 0.4765452966094017,
+      "mean_cosine_to_female": 0.4605592435056513,
+      "bias_score": 0.015986053103750397,
+      "absolute_bias": 0.015986053103750397,
+      "neutrality_distance": 0.015986053103750397
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "beauty",
+      "mean_cosine_to_male": 0.4714403400818507,
+      "mean_cosine_to_female": 0.5069876448674635,
+      "bias_score": -0.0355473047856128,
+      "absolute_bias": 0.0355473047856128,
+      "neutrality_distance": 0.0355473047856128
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "emotion",
+      "mean_cosine_to_male": 0.48338350902001065,
+      "mean_cosine_to_female": 0.4609426070343364,
+      "bias_score": 0.022440901985674222,
+      "absolute_bias": 0.022440901985674222,
+      "neutrality_distance": 0.022440901985674222
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "imagination",
+      "mean_cosine_to_male": 0.44134856512149173,
+      "mean_cosine_to_female": 0.41108587926084345,
+      "bias_score": 0.030262685860648286,
+      "absolute_bias": 0.030262685860648286,
+      "neutrality_distance": 0.030262685860648286
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "song",
+      "mean_cosine_to_male": 0.4955708334843318,
+      "mean_cosine_to_female": 0.5010212551463734,
+      "bias_score": -0.005450421662041627,
+      "absolute_bias": 0.005450421662041627,
+      "neutrality_distance": 0.005450421662041627
+    },
+    {
+      "attribute_set": "arts",
+      "attribute_word": "story",
+      "mean_cosine_to_male": 0.48902857303619385,
+      "mean_cosine_to_female": 0.4844040112061934,
+      "bias_score": 0.004624561830000429,
+      "absolute_bias": 0.004624561830000429,
+      "neutrality_distance": 0.004624561830000429
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "doctor",
+      "mean_cosine_to_male": 0.4745933835705121,
+      "mean_cosine_to_female": 0.4502843645485965,
+      "bias_score": 0.024309019021915623,
+      "absolute_bias": 0.024309019021915623,
+      "neutrality_distance": 0.024309019021915623
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "scientist",
+      "mean_cosine_to_male": 0.45920080691576004,
+      "mean_cosine_to_female": 0.4094496342268857,
+      "bias_score": 0.04975117268887436,
+      "absolute_bias": 0.04975117268887436,
+      "neutrality_distance": 0.04975117268887436
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "professor",
+      "mean_cosine_to_male": 0.49021948625644046,
+      "mean_cosine_to_female": 0.4426468312740326,
+      "bias_score": 0.04757265498240787,
+      "absolute_bias": 0.04757265498240787,
+      "neutrality_distance": 0.04757265498240787
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "lawyer",
+      "mean_cosine_to_male": 0.4400431339939435,
+      "mean_cosine_to_female": 0.42045641758225183,
+      "bias_score": 0.019586716411691685,
+      "absolute_bias": 0.019586716411691685,
+      "neutrality_distance": 0.019586716411691685
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "nurse",
+      "mean_cosine_to_male": 0.48683194319407147,
+      "mean_cosine_to_female": 0.5612869262695312,
+      "bias_score": -0.07445498307545978,
+      "absolute_bias": 0.07445498307545978,
+      "neutrality_distance": 0.07445498307545978
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "teacher",
+      "mean_cosine_to_male": 0.5399004096786181,
+      "mean_cosine_to_female": 0.5168389081954956,
+      "bias_score": 0.02306150148312247,
+      "absolute_bias": 0.02306150148312247,
+      "neutrality_distance": 0.02306150148312247
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "artist",
+      "mean_cosine_to_male": 0.44948984185854596,
+      "mean_cosine_to_female": 0.40976507555354724,
+      "bias_score": 0.039724766304998715,
+      "absolute_bias": 0.039724766304998715,
+      "neutrality_distance": 0.039724766304998715
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "poet",
+      "mean_cosine_to_male": 0.4908735329906146,
+      "mean_cosine_to_female": 0.4587803835218603,
+      "bias_score": 0.0320931494687543,
+      "absolute_bias": 0.0320931494687543,
+      "neutrality_distance": 0.0320931494687543
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "dancer",
+      "mean_cosine_to_male": 0.3887345492839813,
+      "mean_cosine_to_female": 0.4272190196947618,
+      "bias_score": -0.03848447041078046,
+      "absolute_bias": 0.03848447041078046,
+      "neutrality_distance": 0.03848447041078046
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "manager",
+      "mean_cosine_to_male": 0.494123637676239,
+      "mean_cosine_to_female": 0.4800032458522103,
+      "bias_score": 0.014120391824028689,
+      "absolute_bias": 0.014120391824028689,
+      "neutrality_distance": 0.014120391824028689
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "politician",
+      "mean_cosine_to_male": 0.4855612764755885,
+      "mean_cosine_to_female": 0.4268573685125871,
+      "bias_score": 0.0587039079630014,
+      "absolute_bias": 0.0587039079630014,
+      "neutrality_distance": 0.0587039079630014
+    },
+    {
+      "attribute_set": "professions",
+      "attribute_word": "clerk",
+      "mean_cosine_to_male": 0.49276872475941974,
+      "mean_cosine_to_female": 0.49710726737976074,
+      "bias_score": -0.004338542620341002,
+      "absolute_bias": 0.004338542620341002,
+      "neutrality_distance": 0.004338542620341002
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "logical",
+      "mean_cosine_to_male": 0.4411098584532738,
+      "mean_cosine_to_female": 0.41109396381811664,
+      "bias_score": 0.030015894635157137,
+      "absolute_bias": 0.030015894635157137,
+      "neutrality_distance": 0.030015894635157137
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "rational",
+      "mean_cosine_to_male": 0.47057845691839856,
+      "mean_cosine_to_female": 0.4265168715607036,
+      "bias_score": 0.04406158535769494,
+      "absolute_bias": 0.04406158535769494,
+      "neutrality_distance": 0.04406158535769494
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "analytical",
+      "mean_cosine_to_male": 0.4210999285181363,
+      "mean_cosine_to_female": 0.3921471752903678,
+      "bias_score": 0.028952753227768524,
+      "absolute_bias": 0.028952753227768524,
+      "neutrality_distance": 0.028952753227768524
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "ambitious",
+      "mean_cosine_to_male": 0.45429317901531857,
+      "mean_cosine_to_female": 0.39880072799595917,
+      "bias_score": 0.0554924510193594,
+      "absolute_bias": 0.0554924510193594,
+      "neutrality_distance": 0.0554924510193594
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "dominant",
+      "mean_cosine_to_male": 0.4986269523700078,
+      "mean_cosine_to_female": 0.4753411656076258,
+      "bias_score": 0.02328578676238202,
+      "absolute_bias": 0.02328578676238202,
+      "neutrality_distance": 0.02328578676238202
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "strong",
+      "mean_cosine_to_male": 0.4956776723265648,
+      "mean_cosine_to_female": 0.4871538904580203,
+      "bias_score": 0.008523781868544467,
+      "absolute_bias": 0.008523781868544467,
+      "neutrality_distance": 0.008523781868544467
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "emotional",
+      "mean_cosine_to_male": 0.4321623866756757,
+      "mean_cosine_to_female": 0.41346578164534137,
+      "bias_score": 0.018696605030334323,
+      "absolute_bias": 0.018696605030334323,
+      "neutrality_distance": 0.018696605030334323
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "gentle",
+      "mean_cosine_to_male": 0.46973541130622226,
+      "mean_cosine_to_female": 0.48954667015509173,
+      "bias_score": -0.019811258848869473,
+      "absolute_bias": 0.019811258848869473,
+      "neutrality_distance": 0.019811258848869473
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "caring",
+      "mean_cosine_to_male": 0.38307079672813416,
+      "mean_cosine_to_female": 0.33556045998226514,
+      "bias_score": 0.04751033674586902,
+      "absolute_bias": 0.04751033674586902,
+      "neutrality_distance": 0.04751033674586902
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "submissive",
+      "mean_cosine_to_male": 0.44763796031475067,
+      "mean_cosine_to_female": 0.4816899976947091,
+      "bias_score": -0.03405203737995843,
+      "absolute_bias": 0.03405203737995843,
+      "neutrality_distance": 0.03405203737995843
+    },
+    {
+      "attribute_set": "stereotype_traits",
+      "attribute_word": "sensitive",
+      "mean_cosine_to_male": 0.4720549335082372,
+      "mean_cosine_to_female": 0.46891267191280017,
+      "bias_score": 0.0031422615954370126,
+      "absolute_bias": 0.0031422615954370126,
+      "neutrality_distance": 0.0031422615954370126
+    }
+  ],
+  "summary": {
+    "total_attribute_words": 47,
+    "overall_mean_absolute_bias": 0.027165312319993973,
+    "overall_max_absolute_bias": 0.07445498555898666,
+    "set_summaries": {
+      "science": {
+        "word_count": 12,
+        "mean_bias": 0.02271324396133423,
+        "mean_absolute_bias": 0.02412542887032032,
+        "max_absolute_bias": 0.04607025533914566
+      },
+      "arts": {
+        "word_count": 12,
+        "mean_bias": 0.008982527069747448,
+        "mean_absolute_bias": 0.02062654308974743,
+        "max_absolute_bias": 0.03554730489850044
+      },
+      "professions": {
+        "word_count": 12,
+        "mean_bias": 0.015970436856150627,
+        "mean_absolute_bias": 0.03551677241921425,
+        "max_absolute_bias": 0.07445498555898666
+      },
+      "stereotype_traits": {
+        "word_count": 11,
+        "mean_bias": 0.018710743635892868,
+        "mean_absolute_bias": 0.02850406803190708,
+        "max_absolute_bias": 0.055492449551820755
+      }
+    },
+    "top_biased_words": [
+      {
+        "attribute_set": "professions",
+        "attribute_word": "nurse",
+        "mean_cosine_to_male": 0.48683194319407147,
+        "mean_cosine_to_female": 0.5612869262695312,
+        "bias_score": -0.07445498307545978,
+        "absolute_bias": 0.07445498307545978,
+        "neutrality_distance": 0.07445498307545978
+      },
+      {
+        "attribute_set": "professions",
+        "attribute_word": "politician",
+        "mean_cosine_to_male": 0.4855612764755885,
+        "mean_cosine_to_female": 0.4268573685125871,
+        "bias_score": 0.0587039079630014,
+        "absolute_bias": 0.0587039079630014,
+        "neutrality_distance": 0.0587039079630014
+      },
+      {
+        "attribute_set": "stereotype_traits",
+        "attribute_word": "ambitious",
+        "mean_cosine_to_male": 0.45429317901531857,
+        "mean_cosine_to_female": 0.39880072799595917,
+        "bias_score": 0.0554924510193594,
+        "absolute_bias": 0.0554924510193594,
+        "neutrality_distance": 0.0554924510193594
+      },
+      {
+        "attribute_set": "professions",
+        "attribute_word": "scientist",
+        "mean_cosine_to_male": 0.45920080691576004,
+        "mean_cosine_to_female": 0.4094496342268857,
+        "bias_score": 0.04975117268887436,
+        "absolute_bias": 0.04975117268887436,
+        "neutrality_distance": 0.04975117268887436
+      },
+      {
+        "attribute_set": "professions",
+        "attribute_word": "professor",
+        "mean_cosine_to_male": 0.49021948625644046,
+        "mean_cosine_to_female": 0.4426468312740326,
+        "bias_score": 0.04757265498240787,
+        "absolute_bias": 0.04757265498240787,
+        "neutrality_distance": 0.04757265498240787
+      },
+      {
+        "attribute_set": "stereotype_traits",
+        "attribute_word": "caring",
+        "mean_cosine_to_male": 0.38307079672813416,
+        "mean_cosine_to_female": 0.33556045998226514,
+        "bias_score": 0.04751033674586902,
+        "absolute_bias": 0.04751033674586902,
+        "neutrality_distance": 0.04751033674586902
+      },
+      {
+        "attribute_set": "science",
+        "attribute_word": "scholar",
+        "mean_cosine_to_male": 0.5096643591920534,
+        "mean_cosine_to_female": 0.4635941034013575,
+        "bias_score": 0.04607025579069596,
+        "absolute_bias": 0.04607025579069596,
+        "neutrality_distance": 0.04607025579069596
+      },
+      {
+        "attribute_set": "stereotype_traits",
+        "attribute_word": "rational",
+        "mean_cosine_to_male": 0.47057845691839856,
+        "mean_cosine_to_female": 0.4265168715607036,
+        "bias_score": 0.04406158535769494,
+        "absolute_bias": 0.04406158535769494,
+        "neutrality_distance": 0.04406158535769494
+      },
+      {
+        "attribute_set": "science",
+        "attribute_word": "physics",
+        "mean_cosine_to_male": 0.38547977060079575,
+        "mean_cosine_to_female": 0.3433897468176755,
+        "bias_score": 0.04209002378312027,
+        "absolute_bias": 0.04209002378312027,
+        "neutrality_distance": 0.04209002378312027
+      },
+      {
+        "attribute_set": "professions",
+        "attribute_word": "artist",
+        "mean_cosine_to_male": 0.44948984185854596,
+        "mean_cosine_to_female": 0.40976507555354724,
+        "bias_score": 0.039724766304998715,
+        "absolute_bias": 0.039724766304998715,
+        "neutrality_distance": 0.039724766304998715
+      }
+    ]
+  }
+}

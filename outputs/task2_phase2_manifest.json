@@ -1,0 +1,641 @@
+{
+  "phase": 2,
+  "description": "Contextual embedding extraction using average of last four BERT layers",
+  "model_name": "bert-base-uncased",
+  "hidden_size": 768,
+  "embedding_file": "outputs\\task2_phase2_embeddings.npz",
+  "words": {
+    "target": {
+      "male": {
+        "man": {
+          "npz_key": "target__male__man",
+          "vector_count": 51,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 51,
+          "occurrences_unmapped": 0
+        },
+        "men": {
+          "npz_key": "target__male__men",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        },
+        "male": {
+          "npz_key": "target__male__male",
+          "vector_count": 5,
+          "vector_dim": 768,
+          "sentences_seen": 5,
+          "occurrences_mapped": 5,
+          "occurrences_unmapped": 0
+        },
+        "he": {
+          "npz_key": "target__male__he",
+          "vector_count": 59,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 59,
+          "occurrences_unmapped": 0
+        },
+        "him": {
+          "npz_key": "target__male__him",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        },
+        "his": {
+          "npz_key": "target__male__his",
+          "vector_count": 73,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 73,
+          "occurrences_unmapped": 0
+        },
+        "boy": {
+          "npz_key": "target__male__boy",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "father": {
+          "npz_key": "target__male__father",
+          "vector_count": 53,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 53,
+          "occurrences_unmapped": 0
+        },
+        "son": {
+          "npz_key": "target__male__son",
+          "vector_count": 55,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 55,
+          "occurrences_unmapped": 0
+        },
+        "brother": {
+          "npz_key": "target__male__brother",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        },
+        "husband": {
+          "npz_key": "target__male__husband",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        },
+        "king": {
+          "npz_key": "target__male__king",
+          "vector_count": 53,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 53,
+          "occurrences_unmapped": 0
+        }
+      },
+      "female": {
+        "woman": {
+          "npz_key": "target__female__woman",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        },
+        "women": {
+          "npz_key": "target__female__women",
+          "vector_count": 54,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 54,
+          "occurrences_unmapped": 0
+        },
+        "female": {
+          "npz_key": "target__female__female",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "she": {
+          "npz_key": "target__female__she",
+          "vector_count": 54,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 54,
+          "occurrences_unmapped": 0
+        },
+        "her": {
+          "npz_key": "target__female__her",
+          "vector_count": 65,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 65,
+          "occurrences_unmapped": 0
+        },
+        "hers": {
+          "npz_key": "target__female__hers",
+          "vector_count": 15,
+          "vector_dim": 768,
+          "sentences_seen": 15,
+          "occurrences_mapped": 15,
+          "occurrences_unmapped": 0
+        },
+        "girl": {
+          "npz_key": "target__female__girl",
+          "vector_count": 51,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 51,
+          "occurrences_unmapped": 0
+        },
+        "mother": {
+          "npz_key": "target__female__mother",
+          "vector_count": 51,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 51,
+          "occurrences_unmapped": 0
+        },
+        "daughter": {
+          "npz_key": "target__female__daughter",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "sister": {
+          "npz_key": "target__female__sister",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        },
+        "wife": {
+          "npz_key": "target__female__wife",
+          "vector_count": 51,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 51,
+          "occurrences_unmapped": 0
+        },
+        "queen": {
+          "npz_key": "target__female__queen",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        }
+      }
+    },
+    "attribute": {
+      "science": {
+        "science": {
+          "npz_key": "attribute__science__science",
+          "vector_count": 54,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 54,
+          "occurrences_unmapped": 0
+        },
+        "mathematics": {
+          "npz_key": "attribute__science__mathematics",
+          "vector_count": 2,
+          "vector_dim": 768,
+          "sentences_seen": 2,
+          "occurrences_mapped": 2,
+          "occurrences_unmapped": 0
+        },
+        "math": {
+          "npz_key": "attribute__science__math",
+          "vector_count": 1,
+          "vector_dim": 768,
+          "sentences_seen": 1,
+          "occurrences_mapped": 1,
+          "occurrences_unmapped": 0
+        },
+        "physics": {
+          "npz_key": "attribute__science__physics",
+          "vector_count": 5,
+          "vector_dim": 768,
+          "sentences_seen": 5,
+          "occurrences_mapped": 5,
+          "occurrences_unmapped": 0
+        },
+        "chemistry": {
+          "npz_key": "attribute__science__chemistry",
+          "vector_count": 4,
+          "vector_dim": 768,
+          "sentences_seen": 4,
+          "occurrences_mapped": 4,
+          "occurrences_unmapped": 0
+        },
+        "experiment": {
+          "npz_key": "attribute__science__experiment",
+          "vector_count": 3,
+          "vector_dim": 768,
+          "sentences_seen": 3,
+          "occurrences_mapped": 3,
+          "occurrences_unmapped": 0
+        },
+        "theory": {
+          "npz_key": "attribute__science__theory",
+          "vector_count": 29,
+          "vector_dim": 768,
+          "sentences_seen": 28,
+          "occurrences_mapped": 29,
+          "occurrences_unmapped": 0
+        },
+        "logic": {
+          "npz_key": "attribute__science__logic",
+          "vector_count": 24,
+          "vector_dim": 768,
+          "sentences_seen": 22,
+          "occurrences_mapped": 24,
+          "occurrences_unmapped": 0
+        },
+        "analysis": {
+          "npz_key": "attribute__science__analysis",
+          "vector_count": 15,
+          "vector_dim": 768,
+          "sentences_seen": 15,
+          "occurrences_mapped": 15,
+          "occurrences_unmapped": 0
+        },
+        "reason": {
+          "npz_key": "attribute__science__reason",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "scholar": {
+          "npz_key": "attribute__science__scholar",
+          "vector_count": 5,
+          "vector_dim": 768,
+          "sentences_seen": 5,
+          "occurrences_mapped": 5,
+          "occurrences_unmapped": 0
+        },
+        "laboratory": {
+          "npz_key": "attribute__science__laboratory",
+          "vector_count": 4,
+          "vector_dim": 768,
+          "sentences_seen": 4,
+          "occurrences_mapped": 4,
+          "occurrences_unmapped": 0
+        }
+      },
+      "arts": {
+        "art": {
+          "npz_key": "attribute__arts__art",
+          "vector_count": 51,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 51,
+          "occurrences_unmapped": 0
+        },
+        "music": {
+          "npz_key": "attribute__arts__music",
+          "vector_count": 55,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 55,
+          "occurrences_unmapped": 0
+        },
+        "poetry": {
+          "npz_key": "attribute__arts__poetry",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "dance": {
+          "npz_key": "attribute__arts__dance",
+          "vector_count": 54,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 54,
+          "occurrences_unmapped": 0
+        },
+        "drama": {
+          "npz_key": "attribute__arts__drama",
+          "vector_count": 43,
+          "vector_dim": 768,
+          "sentences_seen": 42,
+          "occurrences_mapped": 43,
+          "occurrences_unmapped": 0
+        },
+        "painting": {
+          "npz_key": "attribute__arts__painting",
+          "vector_count": 9,
+          "vector_dim": 768,
+          "sentences_seen": 9,
+          "occurrences_mapped": 9,
+          "occurrences_unmapped": 0
+        },
+        "literature": {
+          "npz_key": "attribute__arts__literature",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "beauty": {
+          "npz_key": "attribute__arts__beauty",
+          "vector_count": 55,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 55,
+          "occurrences_unmapped": 0
+        },
+        "emotion": {
+          "npz_key": "attribute__arts__emotion",
+          "vector_count": 26,
+          "vector_dim": 768,
+          "sentences_seen": 26,
+          "occurrences_mapped": 26,
+          "occurrences_unmapped": 0
+        },
+        "imagination": {
+          "npz_key": "attribute__arts__imagination",
+          "vector_count": 53,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 53,
+          "occurrences_unmapped": 0
+        },
+        "song": {
+          "npz_key": "attribute__arts__song",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "story": {
+          "npz_key": "attribute__arts__story",
+          "vector_count": 52,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 52,
+          "occurrences_unmapped": 0
+        }
+      },
+      "professions": {
+        "engineer": {
+          "npz_key": "attribute__professions__engineer",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "doctor": {
+          "npz_key": "attribute__professions__doctor",
+          "vector_count": 54,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 54,
+          "occurrences_unmapped": 0
+        },
+        "scientist": {
+          "npz_key": "attribute__professions__scientist",
+          "vector_count": 2,
+          "vector_dim": 768,
+          "sentences_seen": 2,
+          "occurrences_mapped": 2,
+          "occurrences_unmapped": 0
+        },
+        "professor": {
+          "npz_key": "attribute__professions__professor",
+          "vector_count": 27,
+          "vector_dim": 768,
+          "sentences_seen": 26,
+          "occurrences_mapped": 27,
+          "occurrences_unmapped": 0
+        },
+        "lawyer": {
+          "npz_key": "attribute__professions__lawyer",
+          "vector_count": 3,
+          "vector_dim": 768,
+          "sentences_seen": 3,
+          "occurrences_mapped": 3,
+          "occurrences_unmapped": 0
+        },
+        "nurse": {
+          "npz_key": "attribute__professions__nurse",
+          "vector_count": 7,
+          "vector_dim": 768,
+          "sentences_seen": 7,
+          "occurrences_mapped": 7,
+          "occurrences_unmapped": 0
+        },
+        "teacher": {
+          "npz_key": "attribute__professions__teacher",
+          "vector_count": 45,
+          "vector_dim": 768,
+          "sentences_seen": 44,
+          "occurrences_mapped": 45,
+          "occurrences_unmapped": 0
+        },
+        "artist": {
+          "npz_key": "attribute__professions__artist",
+          "vector_count": 18,
+          "vector_dim": 768,
+          "sentences_seen": 18,
+          "occurrences_mapped": 18,
+          "occurrences_unmapped": 0
+        },
+        "poet": {
+          "npz_key": "attribute__professions__poet",
+          "vector_count": 53,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 53,
+          "occurrences_unmapped": 0
+        },
+        "dancer": {
+          "npz_key": "attribute__professions__dancer",
+          "vector_count": 1,
+          "vector_dim": 768,
+          "sentences_seen": 1,
+          "occurrences_mapped": 1,
+          "occurrences_unmapped": 0
+        },
+        "homemaker": {
+          "npz_key": "attribute__professions__homemaker",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "manager": {
+          "npz_key": "attribute__professions__manager",
+          "vector_count": 37,
+          "vector_dim": 768,
+          "sentences_seen": 36,
+          "occurrences_mapped": 37,
+          "occurrences_unmapped": 0
+        },
+        "programmer": {
+          "npz_key": "attribute__professions__programmer",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "politician": {
+          "npz_key": "attribute__professions__politician",
+          "vector_count": 2,
+          "vector_dim": 768,
+          "sentences_seen": 2,
+          "occurrences_mapped": 2,
+          "occurrences_unmapped": 0
+        },
+        "clerk": {
+          "npz_key": "attribute__professions__clerk",
+          "vector_count": 5,
+          "vector_dim": 768,
+          "sentences_seen": 5,
+          "occurrences_mapped": 5,
+          "occurrences_unmapped": 0
+        }
+      },
+      "stereotype_traits": {
+        "logical": {
+          "npz_key": "attribute__stereotype_traits__logical",
+          "vector_count": 11,
+          "vector_dim": 768,
+          "sentences_seen": 11,
+          "occurrences_mapped": 11,
+          "occurrences_unmapped": 0
+        },
+        "rational": {
+          "npz_key": "attribute__stereotype_traits__rational",
+          "vector_count": 13,
+          "vector_dim": 768,
+          "sentences_seen": 13,
+          "occurrences_mapped": 13,
+          "occurrences_unmapped": 0
+        },
+        "analytical": {
+          "npz_key": "attribute__stereotype_traits__analytical",
+          "vector_count": 3,
+          "vector_dim": 768,
+          "sentences_seen": 3,
+          "occurrences_mapped": 3,
+          "occurrences_unmapped": 0
+        },
+        "assertive": {
+          "npz_key": "attribute__stereotype_traits__assertive",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "ambitious": {
+          "npz_key": "attribute__stereotype_traits__ambitious",
+          "vector_count": 1,
+          "vector_dim": 768,
+          "sentences_seen": 1,
+          "occurrences_mapped": 1,
+          "occurrences_unmapped": 0
+        },
+        "dominant": {
+          "npz_key": "attribute__stereotype_traits__dominant",
+          "vector_count": 8,
+          "vector_dim": 768,
+          "sentences_seen": 8,
+          "occurrences_mapped": 8,
+          "occurrences_unmapped": 0
+        },
+        "strong": {
+          "npz_key": "attribute__stereotype_traits__strong",
+          "vector_count": 50,
+          "vector_dim": 768,
+          "sentences_seen": 50,
+          "occurrences_mapped": 50,
+          "occurrences_unmapped": 0
+        },
+        "emotional": {
+          "npz_key": "attribute__stereotype_traits__emotional",
+          "vector_count": 11,
+          "vector_dim": 768,
+          "sentences_seen": 11,
+          "occurrences_mapped": 11,
+          "occurrences_unmapped": 0
+        },
+        "gentle": {
+          "npz_key": "attribute__stereotype_traits__gentle",
+          "vector_count": 26,
+          "vector_dim": 768,
+          "sentences_seen": 26,
+          "occurrences_mapped": 26,
+          "occurrences_unmapped": 0
+        },
+        "caring": {
+          "npz_key": "attribute__stereotype_traits__caring",
+          "vector_count": 5,
+          "vector_dim": 768,
+          "sentences_seen": 5,
+          "occurrences_mapped": 5,
+          "occurrences_unmapped": 0
+        },
+        "nurturing": {
+          "npz_key": "attribute__stereotype_traits__nurturing",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "submissive": {
+          "npz_key": "attribute__stereotype_traits__submissive",
+          "vector_count": 2,
+          "vector_dim": 768,
+          "sentences_seen": 2,
+          "occurrences_mapped": 2,
+          "occurrences_unmapped": 0
+        },
+        "supportive": {
+          "npz_key": "attribute__stereotype_traits__supportive",
+          "vector_count": 0,
+          "vector_dim": 768,
+          "sentences_seen": 0,
+          "occurrences_mapped": 0,
+          "occurrences_unmapped": 0
+        },
+        "sensitive": {
+          "npz_key": "attribute__stereotype_traits__sensitive",
+          "vector_count": 9,
+          "vector_dim": 768,
+          "sentences_seen": 9,
+          "occurrences_mapped": 9,
+          "occurrences_unmapped": 0
+        }
+      }
+    }
+  }
+}

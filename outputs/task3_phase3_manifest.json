@@ -1,0 +1,486 @@
+{
+  "phase": 3,
+  "description": "Mean pooling and centroid calculation from Phase 2 contextual embeddings",
+  "model_name": "bert-base-uncased",
+  "hidden_size": 768,
+  "words": {
+    "target": {
+      "male": {
+        "man": {
+          "npz_key": "target__male__man",
+          "centroid_dim": 768,
+          "source_vector_count": 51,
+          "has_context": true
+        },
+        "men": {
+          "npz_key": "target__male__men",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        },
+        "male": {
+          "npz_key": "target__male__male",
+          "centroid_dim": 768,
+          "source_vector_count": 5,
+          "has_context": true
+        },
+        "he": {
+          "npz_key": "target__male__he",
+          "centroid_dim": 768,
+          "source_vector_count": 59,
+          "has_context": true
+        },
+        "him": {
+          "npz_key": "target__male__him",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        },
+        "his": {
+          "npz_key": "target__male__his",
+          "centroid_dim": 768,
+          "source_vector_count": 73,
+          "has_context": true
+        },
+        "boy": {
+          "npz_key": "target__male__boy",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "father": {
+          "npz_key": "target__male__father",
+          "centroid_dim": 768,
+          "source_vector_count": 53,
+          "has_context": true
+        },
+        "son": {
+          "npz_key": "target__male__son",
+          "centroid_dim": 768,
+          "source_vector_count": 55,
+          "has_context": true
+        },
+        "brother": {
+          "npz_key": "target__male__brother",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        },
+        "husband": {
+          "npz_key": "target__male__husband",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        },
+        "king": {
+          "npz_key": "target__male__king",
+          "centroid_dim": 768,
+          "source_vector_count": 53,
+          "has_context": true
+        }
+      },
+      "female": {
+        "woman": {
+          "npz_key": "target__female__woman",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        },
+        "women": {
+          "npz_key": "target__female__women",
+          "centroid_dim": 768,
+          "source_vector_count": 54,
+          "has_context": true
+        },
+        "female": {
+          "npz_key": "target__female__female",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "she": {
+          "npz_key": "target__female__she",
+          "centroid_dim": 768,
+          "source_vector_count": 54,
+          "has_context": true
+        },
+        "her": {
+          "npz_key": "target__female__her",
+          "centroid_dim": 768,
+          "source_vector_count": 65,
+          "has_context": true
+        },
+        "hers": {
+          "npz_key": "target__female__hers",
+          "centroid_dim": 768,
+          "source_vector_count": 15,
+          "has_context": true
+        },
+        "girl": {
+          "npz_key": "target__female__girl",
+          "centroid_dim": 768,
+          "source_vector_count": 51,
+          "has_context": true
+        },
+        "mother": {
+          "npz_key": "target__female__mother",
+          "centroid_dim": 768,
+          "source_vector_count": 51,
+          "has_context": true
+        },
+        "daughter": {
+          "npz_key": "target__female__daughter",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "sister": {
+          "npz_key": "target__female__sister",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        },
+        "wife": {
+          "npz_key": "target__female__wife",
+          "centroid_dim": 768,
+          "source_vector_count": 51,
+          "has_context": true
+        },
+        "queen": {
+          "npz_key": "target__female__queen",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        }
+      }
+    },
+    "attribute": {
+      "science": {
+        "science": {
+          "npz_key": "attribute__science__science",
+          "centroid_dim": 768,
+          "source_vector_count": 54,
+          "has_context": true
+        },
+        "mathematics": {
+          "npz_key": "attribute__science__mathematics",
+          "centroid_dim": 768,
+          "source_vector_count": 2,
+          "has_context": true
+        },
+        "math": {
+          "npz_key": "attribute__science__math",
+          "centroid_dim": 768,
+          "source_vector_count": 1,
+          "has_context": true
+        },
+        "physics": {
+          "npz_key": "attribute__science__physics",
+          "centroid_dim": 768,
+          "source_vector_count": 5,
+          "has_context": true
+        },
+        "chemistry": {
+          "npz_key": "attribute__science__chemistry",
+          "centroid_dim": 768,
+          "source_vector_count": 4,
+          "has_context": true
+        },
+        "experiment": {
+          "npz_key": "attribute__science__experiment",
+          "centroid_dim": 768,
+          "source_vector_count": 3,
+          "has_context": true
+        },
+        "theory": {
+          "npz_key": "attribute__science__theory",
+          "centroid_dim": 768,
+          "source_vector_count": 29,
+          "has_context": true
+        },
+        "logic": {
+          "npz_key": "attribute__science__logic",
+          "centroid_dim": 768,
+          "source_vector_count": 24,
+          "has_context": true
+        },
+        "analysis": {
+          "npz_key": "attribute__science__analysis",
+          "centroid_dim": 768,
+          "source_vector_count": 15,
+          "has_context": true
+        },
+        "reason": {
+          "npz_key": "attribute__science__reason",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "scholar": {
+          "npz_key": "attribute__science__scholar",
+          "centroid_dim": 768,
+          "source_vector_count": 5,
+          "has_context": true
+        },
+        "laboratory": {
+          "npz_key": "attribute__science__laboratory",
+          "centroid_dim": 768,
+          "source_vector_count": 4,
+          "has_context": true
+        }
+      },
+      "arts": {
+        "art": {
+          "npz_key": "attribute__arts__art",
+          "centroid_dim": 768,
+          "source_vector_count": 51,
+          "has_context": true
+        },
+        "music": {
+          "npz_key": "attribute__arts__music",
+          "centroid_dim": 768,
+          "source_vector_count": 55,
+          "has_context": true
+        },
+        "poetry": {
+          "npz_key": "attribute__arts__poetry",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "dance": {
+          "npz_key": "attribute__arts__dance",
+          "centroid_dim": 768,
+          "source_vector_count": 54,
+          "has_context": true
+        },
+        "drama": {
+          "npz_key": "attribute__arts__drama",
+          "centroid_dim": 768,
+          "source_vector_count": 43,
+          "has_context": true
+        },
+        "painting": {
+          "npz_key": "attribute__arts__painting",
+          "centroid_dim": 768,
+          "source_vector_count": 9,
+          "has_context": true
+        },
+        "literature": {
+          "npz_key": "attribute__arts__literature",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "beauty": {
+          "npz_key": "attribute__arts__beauty",
+          "centroid_dim": 768,
+          "source_vector_count": 55,
+          "has_context": true
+        },
+        "emotion": {
+          "npz_key": "attribute__arts__emotion",
+          "centroid_dim": 768,
+          "source_vector_count": 26,
+          "has_context": true
+        },
+        "imagination": {
+          "npz_key": "attribute__arts__imagination",
+          "centroid_dim": 768,
+          "source_vector_count": 53,
+          "has_context": true
+        },
+        "song": {
+          "npz_key": "attribute__arts__song",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "story": {
+          "npz_key": "attribute__arts__story",
+          "centroid_dim": 768,
+          "source_vector_count": 52,
+          "has_context": true
+        }
+      },
+      "professions": {
+        "engineer": {
+          "npz_key": "attribute__professions__engineer",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "doctor": {
+          "npz_key": "attribute__professions__doctor",
+          "centroid_dim": 768,
+          "source_vector_count": 54,
+          "has_context": true
+        },
+        "scientist": {
+          "npz_key": "attribute__professions__scientist",
+          "centroid_dim": 768,
+          "source_vector_count": 2,
+          "has_context": true
+        },
+        "professor": {
+          "npz_key": "attribute__professions__professor",
+          "centroid_dim": 768,
+          "source_vector_count": 27,
+          "has_context": true
+        },
+        "lawyer": {
+          "npz_key": "attribute__professions__lawyer",
+          "centroid_dim": 768,
+          "source_vector_count": 3,
+          "has_context": true
+        },
+        "nurse": {
+          "npz_key": "attribute__professions__nurse",
+          "centroid_dim": 768,
+          "source_vector_count": 7,
+          "has_context": true
+        },
+        "teacher": {
+          "npz_key": "attribute__professions__teacher",
+          "centroid_dim": 768,
+          "source_vector_count": 45,
+          "has_context": true
+        },
+        "artist": {
+          "npz_key": "attribute__professions__artist",
+          "centroid_dim": 768,
+          "source_vector_count": 18,
+          "has_context": true
+        },
+        "poet": {
+          "npz_key": "attribute__professions__poet",
+          "centroid_dim": 768,
+          "source_vector_count": 53,
+          "has_context": true
+        },
+        "dancer": {
+          "npz_key": "attribute__professions__dancer",
+          "centroid_dim": 768,
+          "source_vector_count": 1,
+          "has_context": true
+        },
+        "homemaker": {
+          "npz_key": "attribute__professions__homemaker",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "manager": {
+          "npz_key": "attribute__professions__manager",
+          "centroid_dim": 768,
+          "source_vector_count": 37,
+          "has_context": true
+        },
+        "programmer": {
+          "npz_key": "attribute__professions__programmer",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "politician": {
+          "npz_key": "attribute__professions__politician",
+          "centroid_dim": 768,
+          "source_vector_count": 2,
+          "has_context": true
+        },
+        "clerk": {
+          "npz_key": "attribute__professions__clerk",
+          "centroid_dim": 768,
+          "source_vector_count": 5,
+          "has_context": true
+        }
+      },
+      "stereotype_traits": {
+        "logical": {
+          "npz_key": "attribute__stereotype_traits__logical",
+          "centroid_dim": 768,
+          "source_vector_count": 11,
+          "has_context": true
+        },
+        "rational": {
+          "npz_key": "attribute__stereotype_traits__rational",
+          "centroid_dim": 768,
+          "source_vector_count": 13,
+          "has_context": true
+        },
+        "analytical": {
+          "npz_key": "attribute__stereotype_traits__analytical",
+          "centroid_dim": 768,
+          "source_vector_count": 3,
+          "has_context": true
+        },
+        "assertive": {
+          "npz_key": "attribute__stereotype_traits__assertive",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "ambitious": {
+          "npz_key": "attribute__stereotype_traits__ambitious",
+          "centroid_dim": 768,
+          "source_vector_count": 1,
+          "has_context": true
+        },
+        "dominant": {
+          "npz_key": "attribute__stereotype_traits__dominant",
+          "centroid_dim": 768,
+          "source_vector_count": 8,
+          "has_context": true
+        },
+        "strong": {
+          "npz_key": "attribute__stereotype_traits__strong",
+          "centroid_dim": 768,
+          "source_vector_count": 50,
+          "has_context": true
+        },
+        "emotional": {
+          "npz_key": "attribute__stereotype_traits__emotional",
+          "centroid_dim": 768,
+          "source_vector_count": 11,
+          "has_context": true
+        },
+        "gentle": {
+          "npz_key": "attribute__stereotype_traits__gentle",
+          "centroid_dim": 768,
+          "source_vector_count": 26,
+          "has_context": true
+        },
+        "caring": {
+          "npz_key": "attribute__stereotype_traits__caring",
+          "centroid_dim": 768,
+          "source_vector_count": 5,
+          "has_context": true
+        },
+        "nurturing": {
+          "npz_key": "attribute__stereotype_traits__nurturing",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "submissive": {
+          "npz_key": "attribute__stereotype_traits__submissive",
+          "centroid_dim": 768,
+          "source_vector_count": 2,
+          "has_context": true
+        },
+        "supportive": {
+          "npz_key": "attribute__stereotype_traits__supportive",
+          "centroid_dim": 768,
+          "source_vector_count": 0,
+          "has_context": false
+        },
+        "sensitive": {
+          "npz_key": "attribute__stereotype_traits__sensitive",
+          "centroid_dim": 768,
+          "source_vector_count": 9,
+          "has_context": true
+        }
+      }
+    }
+  }
+}
