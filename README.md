@@ -37,3 +37,20 @@ Interpretation:
 - **Bias(a) > 0**: stronger association with male target words
 - **Bias(a) < 0**: stronger association with female target words
 - **|Bias(a)|**: distance from neutrality (0 = mathematically neutral)
+
+## results
+
+- **Indian literature (full corpus) shows clear directional bias on specific words**:
+  - **Female-leaning**: `nurse` (**-0.0745**), `beauty` (**-0.0355**)
+  - **Male-leaning**: `politician` (**+0.0587**), `ambitious` (**+0.0555**), `scientist` (**+0.0498**)
+  - Profession and stereotype terms show the strongest effects.
+
+- **Male vs Female author comparison** (`task_male_female_bias_comparison.csv`) shows both agreement and disagreement:
+  - **Same-direction bias** (both corpora lean similarly):
+    - `nurse`: female-leaning in both (Female authors **-0.0705**, Male authors **-0.1014**)
+    - `manager`: female-leaning in both (**-0.0386** vs **-0.0055**)
+    - `lawyer`: male-leaning in both (**+0.0253** vs **+0.0144**)
+  - **Opposite-direction bias** (corpora disagree):
+    - `strong`: Female authors **-0.0061**, Male authors **+0.0201**
+    - `imagination`: Female authors **-0.0092**, Male authors **+0.0128**
+    - `painting`: Female authors **+0.0041**, Male authors **-0.0084**
