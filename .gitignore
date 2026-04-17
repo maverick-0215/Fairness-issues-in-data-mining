@@ -1,0 +1,11 @@
+# Python cache artifacts
+__pycache__/
+*.py[cod]
+
+# Downloaded corpus data (male vs female experiment)
+outputs/male_female_downloaded_books/
+outputs/task_female_corpus_combined.txt
+outputs/task_male_corpus_combined.txt
+
+# Local context notes/prompts
+context*.md
