@@ -22,7 +22,7 @@ Bias is computed for attribute words in four sets:
 - **Professions**:  
   `engineer, doctor, scientist, professor, lawyer, nurse, teacher, artist, poet, dancer, homemaker, manager, programmer, politician, clerk`
 - **Stereotype traits**:  
-  `logical, rational, analytical, assertive, ambitious, dominant, strong, emotional, gentle, caring, nurturing, submissive, supportive, sensitive`
+  `logical, rational, analytical, assertive, ambitious, dominant, strong, emotional, gentle, caring, nurturing, supportive, sensitive`
 
 ## How bias is computed
 
@@ -38,7 +38,7 @@ Interpretation:
 - **Bias(a) < 0**: stronger association with female target words
 - **|Bias(a)|**: distance from neutrality (0 = mathematically neutral)
 
-## results
+## Results
 
 - **Indian literature (full corpus) shows clear directional bias on specific words**:
   - **Female-leaning**: `nurse` (**-0.0745**), `beauty` (**-0.0355**)
@@ -51,6 +51,11 @@ Interpretation:
     - `manager`: female-leaning in both (**-0.0386** vs **-0.0055**)
     - `lawyer`: male-leaning in both (**+0.0253** vs **+0.0144**)
   - **Opposite-direction bias** (corpora disagree):
-    - `strong`: Female authors **-0.0061**, Male authors **+0.0201**
-    - `imagination`: Female authors **-0.0092**, Male authors **+0.0128**
-    - `painting`: Female authors **+0.0041**, Male authors **-0.0084**
+     - `strong`: Female authors **-0.0061**, Male authors **+0.0201**
+     - `imagination`: Female authors **-0.0092**, Male authors **+0.0128**
+     - `painting`: Female authors **+0.0041**, Male authors **-0.0084**
+
+## Visualization updates
+
+- `graph_comparative_scatter.ipynb`: comparative male-vs-female scatter now uses selective labeling (keeps neutral center unlabeled) and category color-coding.
+- `graph_indian_results.ipynb`: Indian-literature Figure-7-style scatter now uses the same clean selective labeling and category color-coding.
