@@ -61,5 +61,10 @@ Interpretation:
 
 ## Key visualizations
 
-- **Comparative scatter (male-author vs female-author bias per word):** `graph_comparative_scatter.ipynb` -> `outputs\male_female_comparative_scatter.png`
-- **Indian literature Figure-7-style bias vs affinity scatter:** `graph_indian_results.ipynb` -> `outputs\indian_results_bias_affinity_scatter.png`
+### Comparative scatter (male-author vs female-author bias per word)
+
+![Male vs Female comparative scatter](outputs/male_female_comparative_scatter.png)
+
+### Indian literature Figure-7-style bias vs affinity scatter
+
+![Indian literature bias vs affinity scatter](outputs/indian_results_bias_affinity_scatter.png)
