@@ -1,5 +1,9 @@
 # FairML BERT Bias Testing
 
+## Why fairness in word embeddings matters
+
+Word embeddings influence how language models rank, retrieve, and generate text. If embeddings encode social stereotypes, applications built on top of them can amplify those patterns in hiring tools, recommendation systems, search/ranking, summarization, and conversational assistants. Measuring bias is therefore a practical reliability and safety step: it helps identify where model associations are skewed, which terms are most affected, and what needs mitigation before deployment.
+
 This project measures sociolinguistic bias in BERT embeddings using Indian literature from Project Gutenberg.
 
 ## Target sets (what they mean)
@@ -51,11 +55,11 @@ Interpretation:
     - `manager`: female-leaning in both (**-0.0386** vs **-0.0055**)
     - `lawyer`: male-leaning in both (**+0.0253** vs **+0.0144**)
   - **Opposite-direction bias** (corpora disagree):
-     - `strong`: Female authors **-0.0061**, Male authors **+0.0201**
-     - `imagination`: Female authors **-0.0092**, Male authors **+0.0128**
-     - `painting`: Female authors **+0.0041**, Male authors **-0.0084**
+    - `strong`: Female authors **-0.0061**, Male authors **+0.0201**
+    - `imagination`: Female authors **-0.0092**, Male authors **+0.0128**
+    - `painting`: Female authors **+0.0041**, Male authors **-0.0084**
 
-## Visualization updates
+## Key visualizations
 
-- `graph_comparative_scatter.ipynb`: comparative male-vs-female scatter now uses selective labeling (keeps neutral center unlabeled) and category color-coding.
-- `graph_indian_results.ipynb`: Indian-literature Figure-7-style scatter now uses the same clean selective labeling and category color-coding.
+- **Comparative scatter (male-author vs female-author bias per word):** `graph_comparative_scatter.ipynb` -> `outputs\male_female_comparative_scatter.png`
+- **Indian literature Figure-7-style bias vs affinity scatter:** `graph_indian_results.ipynb` -> `outputs\indian_results_bias_affinity_scatter.png`
