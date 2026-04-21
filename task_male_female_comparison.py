@@ -12,9 +12,9 @@ import requests
 import torch
 from transformers import AutoModel, AutoTokenizer
 
-from task1_phase1 import DEFAULT_CONCEPT_SETS, build_word_index, normalize_text, split_sentences
-from task2_phase2 import make_npz_key
-from task4_phase4 import compute_bias_rows
+from phase1_context_extraction import DEFAULT_CONCEPT_SETS, build_word_index, normalize_text, split_sentences
+from phase2_embedding_extraction import make_npz_key
+from phase4_bias_scoring import compute_bias_rows
 
 
 FEMALE_AUTHOR_IDS = [1342, 161, 158, 121, 141, 105, 1260, 768, 519, 84, 145, 6688, 550, 514, 284]

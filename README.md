@@ -6,6 +6,10 @@ Word embeddings influence how language models rank, retrieve, and generate text.
 
 This project measures sociolinguistic bias in BERT embeddings using Indian literature from Project Gutenberg.
 
+## Repository note on data
+
+The full downloaded Western male/female Gutenberg text corpus is intentionally not committed to Git to keep the repository lightweight and avoid versioning large raw data files. The analysis outputs and scripts are included, and the corpus can be re-downloaded using the provided pipeline.
+
 ## Target sets (what they mean)
 
 Target sets are anchor concepts used as comparison groups:
