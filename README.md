@@ -65,6 +65,6 @@ Interpretation:
 
 ![Male vs Female comparative scatter](outputs/male_female_comparative_scatter.png)
 
-### Indian literature Figure-7-style bias vs affinity scatter
+### Indian literature bias vs affinity scatter
 
 ![Indian literature bias vs affinity scatter](outputs/indian_results_bias_affinity_scatter.png)
